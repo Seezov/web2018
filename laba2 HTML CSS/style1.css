@@ -1,0 +1,29 @@
+body{
+	margin: auto;
+	width: 400px;
+	height: 100vh;
+}
+
+.centerBlocks{
+	display: flex;
+	text-align: center;
+}
+
+.outherBlock{
+	height: 10vh;
+	background: blue;
+	color: white;
+	text-align: left;
+}
+
+.yellowInnerBlock{
+	height: 80vh;
+	width: 33.3%;
+	background: yellow;
+	
+}
+
+.whiteInnerBlock{
+	height: 80vh;
+	width: 33.3%;
+}

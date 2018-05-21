@@ -1,0 +1,21 @@
+body{
+	margin: auto;
+}
+
+.myTable{
+	width: 400px;
+	height: 100vh;
+	text-align: center;
+	margin: auto;
+}
+
+.outherBlock{
+	color: white;
+	background: blue;
+	text-align: left;
+	height: 10%;
+}
+
+.innerBlock{
+	background: yellow;
+}
