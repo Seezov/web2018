@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <input id="string" type="text">
+    <button onclick="divide()">Divide</button>
+    <div>
+    <ul id="result"></ul>
+    </div>
+      <script>
+        function divide(){
+          var string = document.getElementById("string").value;
+          var items = separator(string);
+          var list = document.getElementById("result");
+
+          while(list.firstChild){
+           list.removeChild(list.firstChild);
+          }
+
+          items.forEach(function(item) {
+                var li = document.createElement('li');
+                li.textContent = item;
+                list.appendChild(li);
+              });
+        }
+        
+        function separator(string){
+          var result = [];
+          var size = string.length;
+          
+          for(i=0; i<size; i+=2){
+            result.push(string.substring(i, i+2));
+          }
+
+          if(result[result.length-1].length === 1){
+            result[result.length-1] += "_";
+          }
+          return result;
+        }
+      </script>
+  </body>
+</html>
